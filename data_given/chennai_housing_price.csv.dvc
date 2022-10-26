@@ -1,0 +1,4 @@
+outs:
+- md5: 04bd17df2c16ef9e598cc0626a546721
+  size: 942865
+  path: chennai_housing_price.csv
