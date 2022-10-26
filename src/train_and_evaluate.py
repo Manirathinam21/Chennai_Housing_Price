@@ -79,16 +79,17 @@ def train_and_evaluate(config_path):
     
     with open(params_file, "w") as f:
         params= {
-            "alpha": alpha,
-            "l1_ratio": l1_ratio
+            "max_depth": max_depth,
+            "max_features": max_features,
+            "n_estimators": n_estimators
         }
         json.dump(params, f, indent=4)
 
 
 ################################################################################################################################
 
-    os.makedirs(model_dirs, exist_ok=True)
-    model_path=os.path.join(model_dirs, 'pipeline.joblib')
+    os.makedirs(model_dir, exist_ok=True)
+    model_path=os.path.join(model_dir, 'pipeline.joblib')
     
     joblib.dump(pipe, model_path)
 
