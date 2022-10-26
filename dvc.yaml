@@ -1,0 +1,9 @@
+stages:
+  clean_data:
+    cmd: python src/clean_data.py  --config=params.yaml
+    deps:
+    - src/get_data.py
+    - src/clean_data.py
+    - data_given/chennai_housing_price.csv
+    outs:
+    - data/cleaned/chennai_housing_price.csv

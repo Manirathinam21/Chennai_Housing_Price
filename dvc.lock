@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  clean_data:
+    cmd: python src/clean_data.py  --config=params.yaml
+    deps:
+    - path: data_given/chennai_housing_price.csv
+      md5: 04bd17df2c16ef9e598cc0626a546721
+      size: 942865
+    - path: src/clean_data.py
+      md5: 11d66f3c310e9abf08aa123ffdd277cc
+      size: 1302
+    - path: src/get_data.py
+      md5: 92ce700cb24aecd6c888d83f147f73b3
+      size: 650
+    outs:
+    - path: data/cleaned/chennai_housing_price.csv
+      md5: 29661283be4002342cd42888444e1194
+      size: 528838
