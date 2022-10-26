@@ -1,12 +1,12 @@
 create environment
 
 ```bash
-conda create -n wineqal python=3.7 -y
+conda create -n name python=3.7 -y
 ```
 
 activate environment
 ```bash
-conda activate wineqal
+conda activate name
 ```
 
 create a requirements file and install the req
