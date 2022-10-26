@@ -16,3 +16,19 @@ stages:
     - path: data/cleaned/chennai_housing_price.csv
       md5: 29661283be4002342cd42888444e1194
       size: 528838
+  split_data:
+    cmd: python src/split_data.py  --config=params.yaml
+    deps:
+    - path: data/cleaned/chennai_housing_price.csv
+      md5: 29661283be4002342cd42888444e1194
+      size: 528838
+    - path: src/split_data.py
+      md5: 6c0903c24bbf750ccccc3d73b92f1302
+      size: 1085
+    outs:
+    - path: data/processed/test_chennaihousingprice.csv
+      md5: 973664ed78bbb26799b47fc5b2a6bca2
+      size: 105804
+    - path: data/processed/train_chennaihousingprice.csv
+      md5: 8ab7cbb3e266a5c185a2b7e54fe22bdf
+      size: 423171
