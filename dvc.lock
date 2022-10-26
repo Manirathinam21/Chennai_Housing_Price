@@ -46,16 +46,16 @@ stages:
       size: 3489
     params:
       params.yaml:
-        estimators.RandomForest.params.max_depth: 25
-        estimators.RandomForest.params.max_features: 6
-        estimators.RandomForest.params.n_estimators: 150
+        estimators.RandomForest.params.max_depth: 20
+        estimators.RandomForest.params.max_features: 5
+        estimators.RandomForest.params.n_estimators: 100
     outs:
     - path: report/params.json
-      md5: e7723009f75e58e8214b3b65e406da08
+      md5: a26afc290e7f18b3f913bfae0e418272
       size: 71
     - path: report/scores.json
-      md5: 25a87056ab44cd67d9bd5d9e776760e7
+      md5: fce55da9bf4c627b710b757bc2b334b0
       size: 93
     - path: saved_model/pipeline.joblib
-      md5: a88f853a1787992cefee62d8f2ffd3fc
-      size: 69102304
+      md5: 7e9e5aba6d200cb1156784eb6ad861ea
+      size: 45406224
