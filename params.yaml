@@ -1,0 +1,32 @@
+base:
+  project: Chennai_Housing_Price_Prediction
+  random_state: 42
+  target_col: SALES_PRICE
+
+
+data_source:
+  s3_source: data_given/chennai_housing_price.csv
+
+
+load_data:
+  clean_dataset_csv: data/cleaned/chennai_housing_price.csv
+
+split_data:
+  train_path: data/processed/train_chennaihousingprice.csv
+  test_path: data/processed/test_chennaihousingprice.csv
+  test_size: 0.20
+
+estimators:
+  RandomForest:
+    params:
+      max_depth: 25
+      max_features: 6
+      n_estimators: 150
+
+
+model_dir: saved_model
+
+reports:
+  params: report/params.json
+  scores: report/scores.json
+
