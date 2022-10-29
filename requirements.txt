@@ -11,3 +11,4 @@ joblib
 numpy
 Jinja2
 MarkupSafe
+Babel
