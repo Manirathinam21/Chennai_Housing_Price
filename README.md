@@ -54,6 +54,16 @@ dvc metrics show
 dvc metrics diff
 ```
 
+create tox file and tests folder
+```bash
+touch tox.ini
+touch pyproject.toml
+touch setup.py
+
+mkdir tests
+touch tests/conftest.py tests/test_config.py tests/__init__.py tests/schema_in.json
+```
+
 tox command -
 ```bash
 tox
