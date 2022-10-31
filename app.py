@@ -18,7 +18,7 @@ def read_params(config_path):
 config= read_params(params_path)
 
 model_dir_path= config["webapp_model_dir"]
-cleaned_data_path= config["load_data"]["clean_dataset_csv"]
+cleaned_data_path= config["webapp_cleandata_dir"]
 static_dir= os.path.join(webapp_root, "static")
 template_dir= os.path.join(webapp_root, "templates")
 

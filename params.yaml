@@ -33,3 +33,4 @@ reports:
   scores: report/scores.json
 
 webapp_model_dir: prediction_service/model/pipeline.joblib
+webapp_cleandata_dir: prediction_service/cleaned_data/chennai_housing_price.csv
