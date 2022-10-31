@@ -89,7 +89,8 @@ build your own package commands-
 python setup.py sdist bdist_wheel
 ```
 
-to create a new folders
+to create a workflow folders for auto deployemnt in github
 ```bash
 mkdir -p .github/workflows/
+touch .github/workflows/ci-cd.yaml
 ```

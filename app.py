@@ -40,6 +40,7 @@ def home():
     return render_template('index.html', locations=locations, sales=sales, parkings=parkings, 
                            buildtypes=buildtypes, utilities=utilities, streets=streets, zones=zones)
 
+
 @app.route('/predict',methods=['POST'])
 def predict():
     location = request.form.get('location')
