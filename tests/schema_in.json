@@ -1,31 +1,31 @@
 {
-    'INT_SQFT': {
-                'min': 500.0, 
-                'max': 2500.0
+    "INT_SQFT": {
+                "min": 500.0, 
+                "max": 2500.0
                 },
-    'DIST_MAINROAD': {
-                'min': 0.0,
-                'max': 200.0
+    "DIST_MAINROAD": {
+                "min": 0.0,
+                "max": 200.0
                 },
-    'N_BEDROOM': {
-                'min': 1.0, 
-                'max': 4.0
+    "N_BEDROOM": {
+                "min": 1.0, 
+                "max": 4.0
                 },
-    'N_BATHROOM': {
-                'min': 1.0, 
-                'max': 2.0
+    "N_BATHROOM": {
+                "min": 1.0, 
+                "max": 2.0
                 },
-    'N_ROOM': {
-                'min': 2.0, 
-                'max': 6.0
+    "N_ROOM": {
+                "min": 2.0, 
+                "max": 6.0
                 },
-    'SALES_PRICE': 
+    "SALES_PRICE": 
                 {
-                'min': 2156875.0, 
-                'max': 23667340.0
+                "min": 2156875.0, 
+                "max": 23667340.0
                 },
-    'HOUSE_AGE': {
-                'min': 1460.0, 
-                'max': 20075.0
+    "HOUSE_AGE": {
+                "min": 1460.0, 
+                "max": 20075.0
                 }
 }
