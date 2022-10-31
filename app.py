@@ -63,7 +63,7 @@ def predict():
     
     output=model_pipe.predict(input)[0]
     print(np.round(output, 2))
-    return render_template("index.html",prediction_text="The Predicted House Price is : {}".format(format_currency(output, 'INR', locale='en_IN')))
+    return render_template("index.html", prediction_text="The Predicted House Price is : {}".format(format_currency(output, 'INR', locale='en_IN')))
 
 
 @app.route('/predict_api',methods=['POST'])
@@ -79,4 +79,4 @@ def predict_api():
 
 
 if __name__=='__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)

@@ -12,3 +12,4 @@ numpy
 Jinja2
 MarkupSafe
 Babel
+Flask
